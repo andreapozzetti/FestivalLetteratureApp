@@ -1,0 +1,75 @@
+/* BODY */
+
+body{
+background: rgb(133, 184, 223);
+}
+
+div.container{
+	background-color:rgba(255, 255, 255, 0.3);
+
+}
+
+.page-header .img-responsive{
+    margin: 0 auto;
+}
+
+/* HEATMAP*/
+
+#map-canvas{
+	width: 100%;
+	height: 500px;
+}
+
+
+/* DOT CHART */
+
+#dotChart3h{
+
+}
+
+#dotChart12h{
+	
+}
+
+/* AREA CHART */
+
+#areaChart12h{
+	min-width: 310px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+
+/* BAR CHART */
+
+#barChart1h{
+	min-width: 310px;
+	height: 400px;
+	margin: 0 auto;
+	}
+
+#barChart12h{
+	min-width: 310px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+/* TOPIC */
+
+.link {
+  fill: none;
+  opacity: 0.5;
+  stroke: #666;
+}
+
+.node circle {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+text {
+  font: 13px sans-serif;
+  font-weight: bold;
+  pointer-events: none;
+}
