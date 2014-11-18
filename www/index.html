@@ -1,22 +1,4 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <meta charset="utf-8" />
@@ -24,18 +6,151 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+
+        <title>Festival delle Letterature 2014 - Pescara</title>
+
+        <!-- CSS -->
+        <link href="http://131.175.59.106/festivaldelleletterature2014/html/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://131.175.59.106/festivaldelleletterature2014/html/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://131.175.59.106/festivaldelleletterature2014/html/css/normalize.min.css" />
+        <link rel="stylesheet" href="http://131.175.59.106/festivaldelleletterature2014/html/css/ion.rangeSlider.css" />
+        <link rel="stylesheet" href="http://131.175.59.106/festivaldelleletterature2014/html/css/ion.rangeSlider.skinFlat.css" />
+        
+        <!-- LIB JS -->
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/lib/jquery-1.11.1.min.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/lib/csvToArray.min.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/lib/highcharts.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/lib/highcharts-more.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/lib/ion.rangeSlider.min.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/lib/d3.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://code.highcharts.com/modules/data.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+        
+        <!-- JS FUNCTIONS -->
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/titleDescription.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/slider.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/heatmap.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/dotchart.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/areachart.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/barchart.js"></script>
+        <script src="http://131.175.59.106/festivaldelleletterature2014/html/js/topics.js"></script>
+
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+
+    <div class="container">
+      <div class="page-header">
+        <div class="row">
+        <div class="col-xs-4 col-md-4">
+          <h1>
+            <img class="img-responsive" src="http://131.175.59.106/festivaldelleletterature2014/html/img/logo.png" title="Festival delle Letterature 2014 - Pescara" alt="Festival delle Letterature 2014 - Pescara">
+          </h1>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+        <div class="col-xs-8 col-md-8">
+          <p class="lead text-right">
+            <div class="col-xs-5 col-md-3">
+              <img class="img-responsive" style="padding-right: 15px" src="http://131.175.59.106/festivaldelleletterature2014/html/img/liveon4g.png" title="LIVEON4G" alt="LIVEON4G">
+            </div>
+            <div class="col-xs-5 col-md-3">
+              <img class="img-responsive" style="padding-right: 5px" src="http://131.175.59.106/festivaldelleletterature2014/html/img/logo-politecnico.png" title="Politecnico di Milano - DEIB" alt="Politecnico di Milano - DEIB">
+            </div>
+            <div class="col-xs-5 col-md-3">
+              <img class="img-responsive" style="padding-right: 15px" src="http://131.175.59.106/festivaldelleletterature2014/html/img/logo-skil-telecom.png" title="SKIL - Telecom" alt="SKIL - Telecom">
+            </div>
+            <div class="col-xs-5 col-md-3">
+              <img class="img-responsive" style="padding-right: 15px" src="http://131.175.59.106/festivaldelleletterature2014/html/img/logoEIT.png" title="EIT Labs" alt="EIT Labs">
+            </div>
+          </p>
+        </div>
+        </div>
+        <br />
+        <p class="descriptionProject"></p>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="panel">
+            <p class="descriptionSlider"></p>
+            <input type="text" id="slider" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="panel">
+           <h3 class="titleHeatmap"></h3>
+           <p class="descriptionHeatmap"></p>
+          </div>
+          <div id="map-canvas"></div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="panel">
+            <h3 class="titleDotChart3h"></h3>
+            <p class="descriptionDotChart3h"></p>
+          </div>
+          <div id="dotChart3h"></div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="panel">
+            <h3 class="titleDotChart12h"></h3>
+            <p class="descriptionDotChart12h"></p>
+          </div>
+          <div id="dotChart12h"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="panel">
+            <h3 class="titleAreaChart12h"></h3>
+            <p class="descriptionAreaChart12h"></p>
+          </div>
+          <div id="areaChart12h"></div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="panel">
+            <h3 class="titleBarChart1h"></h3>
+            <p class="descriptionBarChart1h"></p>
+          </div>
+          <div id="barChart1h"></div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="panel">
+            <h3 class="titleBarChart12h"></h3>
+            <p class="descriptionBarChart12h"></p>
+          </div>
+          <div id="barChart12h"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div id="panel">
+            <h3 class="titleTopicsChart"></h3>
+            <p class="descriptionTopicsChart"></p>
+          </div>
+          <div id="topicsChart"></div>
+        </div>
+      </div>
+    
+
+      <p class="credits"></p>
+
+    </div> <!-- /container -->
     </body>
 </html>
