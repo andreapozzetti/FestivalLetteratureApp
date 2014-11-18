@@ -54,6 +54,9 @@ function initialize(twitterData) {
   
   var twitterDataArray = [];
 
+  venuesShowHide = 1; //Set venues button
+  tweetsShowHide = 1; //Set tweet button
+
   var mapOptions = {
     zoom: 14,
     center: new google.maps.LatLng(42.466534, 14.213912),
@@ -164,6 +167,9 @@ function changeHeatmapData(twitterData){
 }
 
 function showVenues(){
+  
+  markers = []; //Reset markers array
+
   var urlVenues = "http://131.175.59.106/festivaldelleletterature2014/html/venues.csv";
   venues = loadData(urlVenues, 0);
   for (var i = 0; i < venues.length; i++) {
@@ -193,6 +199,8 @@ function hideVenues() {
 }
 
 function showTweetMarkers(tweets) {
+
+    markerTweet = []; //Reset tweets array
 
     for (var i = 0; i < tweets.length; i++) {
       var tweetsLatLng = new google.maps.LatLng(tweets[i][0], tweets[i][1]);
