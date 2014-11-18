@@ -7,7 +7,6 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Database Group - DEIB - Politecnico di Milano
     </author>
-    <content src="index.html" />
     <preference name="phonegap-version" value="3.6.3" />
     <preference name="phonegap-version" value="3.3.0" />
     <preference name="permissions" value="none" />
