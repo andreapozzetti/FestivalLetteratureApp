@@ -1,4 +1,7 @@
-$(function() {
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
 
 	var i;
 	var arrayValues = [];
@@ -134,8 +137,4 @@ $(function() {
         });
 
 
-
-
-
-
-});
+}
