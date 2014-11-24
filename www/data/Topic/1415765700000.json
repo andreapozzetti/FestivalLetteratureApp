@@ -1,1 +1,0 @@
-{"nodes":[{"id":"0","label":"samuele bersani","group":"0","value":"2.0"},{"id":"1","label":"nowplaying","group":"0","value":"1.0"},{"id":"2","label":"dario franceschini","group":"1","value":"1.0"},{"id":"3","label":"tttourism","group":"1","value":"1.0"}],"links":[{"source":0,"target":1,"value":0.5},{"source":2,"target":3,"value":0.01}]}

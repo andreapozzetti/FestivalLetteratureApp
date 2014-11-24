@@ -1,1 +1,0 @@
-{"nodes":[{"id":"0","label":"massimo mantellini","group":"0","value":"1.0"},{"id":"1","label":"gruber","group":"1","value":"1.0"},{"id":"2","label":"ottoemezzo","group":"1","value":"1.0"},{"id":"3","label":"beppe severgnini","group":"1","value":"1.0"}],"links":[{"source":1,"target":2,"value":0.01},{"source":1,"target":3,"value":0.01}]}
